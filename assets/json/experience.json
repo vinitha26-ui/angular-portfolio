@@ -1,0 +1,25 @@
+[
+    {
+      "role": "Senior Software Analyst",
+      "company": "Accenture",
+      "duration": "Feb 2025 - Present",
+      "responsibilities": [
+        "Developed Angular UI using NgRx, RxJS, and Angular Material.",
+        "Integrated REST APIs and handled reactive form validations.",
+        "Mentored junior developers in clean code and component reuse."
+      ],
+      "skills": ["Angular", "NgRx", "RxJS", "TypeScript", "REST API", "SCSS"]
+    },
+    {
+      "role": "IT Analyst",
+      "company": "TCS",
+      "duration": "May 2019 - Jan 2025",
+      "responsibilities": [
+        "Worked on 3 Angular insurance projects with responsive design.",
+        "Collaborated with backend team for seamless API integration.",
+        "Wrote unit tests using Jasmine & Karma."
+      ],
+      "skills": ["Angular", "RxJS", "API Integration", "Jasmine", "Karma"]
+    }
+  ]
+  

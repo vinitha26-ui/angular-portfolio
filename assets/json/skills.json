@@ -1,0 +1,9 @@
+[
+    { "name": "Angular", "level": 95 },
+    { "name": "TypeScript", "level": 90 },
+    { "name": "RxJS", "level": 85 },
+    { "name": "NgRx", "level": 75 },
+    { "name": "SCSS", "level": 92 },
+    { "name": "HTML/CSS", "level": 98 }
+  ]
+  

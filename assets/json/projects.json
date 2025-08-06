@@ -1,0 +1,22 @@
+[
+    {
+      "title": "Freelance Angular Portfolio",
+      "description": "Responsive personal website built with Angular, featuring animations, routing, and live API integration.",
+      "tech": ["Angular", "RxJS", "SCSS", "Material"],
+      "github": "https://github.com/vinitha26-ui/angular-portfolio",
+      "demo": "https://vinitha26-ui.github.io/angular-portfolio/"
+    },
+    {
+      "title": "Insurance Claims Portal – TCS",
+      "description": "Developed UI for an enterprise insurance claims platform. Used Angular, NgRx for state management, and REST APIs for backend integration.",
+      "tech": ["Angular", "NgRx", "RxJS", "REST API"],
+      "note": "Internal Project – No public access"
+    },
+    {
+      "title": "Admin Dashboard – Accenture",
+      "description": "Built reusable Angular components and enterprise-grade UI for an internal admin dashboard. Focused on lazy loading and responsive design.",
+      "tech": ["Angular", "Material", "Lazy Loading", "SCSS"],
+      "note": "Internal Project – No public access"
+    }
+  ]
+  

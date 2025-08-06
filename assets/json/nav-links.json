@@ -1,0 +1,9 @@
+[
+    { "label": "Home", "route": "/" },
+    { "label": "About", "route": "/about" },
+    { "label": "Skills", "route": "/skills" },
+    { "label": "Projects", "route": "/projects" },
+    { "label": "Experience", "route": "/experience" },
+    { "label": "Contact", "route": "/contact" }
+  ]
+  
