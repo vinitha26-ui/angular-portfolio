@@ -1,0 +1,27 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 1rem;
+  
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    .spacer {
+      flex: 1 1 auto;
+    }
+  
+    .nav-links a {
+      margin-left: 10px;
+      font-weight: 500;
+      color: white;
+  
+      &.active {
+        border-bottom: 2px solid yellow;
+      }
+    }
+  }
+  

@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="navbar">
+    <span class="brand" routerLink="/">Vinitha R</span>
+  
+    <span class="spacer"></span>
+  
+    <nav class="nav-links">
+      <a
+        *ngFor="let link of navLinks"
+        mat-button
+        [routerLink]="link.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ link.label }}
+      </a>
+    </nav>
+  </mat-toolbar>
+  

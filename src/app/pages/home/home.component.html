@@ -1,0 +1,35 @@
+<div class="home-wrapper" @pageLoadFade>
+    <section class="hero" @fadeIn>
+        <span class="title-span">
+        <h1>Hello, I'm Vinitha</h1>
+        <p class="clock">Local Time: {{ time | date: 'shortTime' }}</p>
+        </span>
+        <p>I’m a <span>{{ dynamicTitle }}</span></p>
+        
+        <div class="hero-actions">
+          <button mat-raised-button color="primary" routerLink="/projects">View My Work</button>
+                    <a mat-stroked-button href="assets/VinithaRResume.pdf" download>
+                        Download Resume
+                    </a>
+        </div>
+      
+        
+      
+       
+      </section>
+      
+  
+    <section class="summary" @cardStagger *ngIf="showCards">
+        <mat-card class="summary-card" *ngFor="let item of techStacks">
+            <img class="tech-icons" [src]="'assets/images/' + item.value + '.svg'"
+            [alt]="item.title" />
+          <h3>{{ item.title }}</h3>
+        </mat-card>
+      </section>
+  
+    <!-- <section class="form-showcase">
+      <h2>Contact Me</h2>
+      <app-contact-form></app-contact-form> 
+    </section> -->
+  </div>
+  

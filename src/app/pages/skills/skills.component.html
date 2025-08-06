@@ -1,0 +1,14 @@
+<section class="skills-wrapper">
+    <h2>My Technical Skills</h2>
+  
+    <div class="chart-container">
+      <canvas
+        baseChart
+        [data]="{ labels: barChartLabels, datasets: barChartData }"
+        [type]="barChartType"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins">
+      </canvas>
+    </div>
+  </section>
+  

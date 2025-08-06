@@ -1,0 +1,36 @@
+<div class="experience-wrapper">
+    <h2>Work Experience</h2>
+  
+    <div class="filters">
+      <mat-form-field appearance="fill" class="filter-select">
+        <mat-label>Company</mat-label>
+        <mat-select [(value)]="selectedCompany" (selectionChange)="filterExperiences()">
+          <mat-option *ngFor="let company of companies" [value]="company">{{ company }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="legacy" class="search-input">
+        <input matInput type="text" placeholder="Search roles, tech, or tasks..." [(ngModel)]="searchTerm" (input)="filterExperiences()">
+      </mat-form-field>
+    </div>
+  
+    <div class="experience-grid" @staggerFadeIn>
+      <mat-card *ngFor="let exp of filteredList" class="experience-card">
+        <mat-card-header>
+          <mat-card-title>{{ exp.role }}</mat-card-title>
+          <mat-card-subtitle>{{ exp.company }} | {{ exp.duration }}</mat-card-subtitle>
+        </mat-card-header>
+  
+        <mat-card-content>
+          <ul>
+            <li *ngFor="let item of exp.responsibilities">{{ item }}</li>
+          </ul>
+  
+          <div class="tech-badges" *ngIf="exp.skills?.length">
+            <span class="badge" *ngFor="let tech of exp.skills">{{ tech }}</span>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

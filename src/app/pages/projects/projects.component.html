@@ -1,0 +1,21 @@
+
+<div class="projects-wrapper">
+<div *ngIf="loading$ | async" class="loading">Loading...</div>
+
+<div class="project-grid" @cardStagger>
+  <mat-card *ngFor="let project of (projects$ | async)" class="project-card">
+    <mat-card-title>{{ project.title }}</mat-card-title>
+    <mat-card-content>
+      <p>{{ project.description }}</p>
+      <div class="tech-stack">
+        <span *ngFor="let tech of project.tech" class="tech-chip">{{ tech }}</span>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <a *ngIf="project.github" mat-button href="{{ project.github }}" target="_blank">GitHub</a>
+      <a *ngIf="project.demo" mat-button color="primary" href="{{ project.demo }}" target="_blank">Live Demo</a>
+      <span *ngIf="project.note" class="internal-note">{{ project.note }}</span>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div>

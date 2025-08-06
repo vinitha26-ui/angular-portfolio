@@ -1,0 +1,48 @@
+<div class="contact-wrapper">
+    <h2>Get In Touch</h2>
+  
+    <div class="contact-grid">
+      <!-- Form Block -->
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+          <mat-error *ngIf="submitted && contactForm.get('name')?.hasError('required')">
+            Name is required
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" />
+          <mat-error *ngIf="submitted && contactForm.get('email')?.hasError('required')">
+            Email is required
+          </mat-error>
+          <mat-error *ngIf="submitted && contactForm.get('email')?.hasError('email')">
+            Invalid email
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Message</mat-label>
+          <textarea matInput rows="5" formControlName="message"></textarea>
+          <mat-error *ngIf="submitted && contactForm.get('message')?.hasError('required')">
+            Message is required
+          </mat-error>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit">Send Message</button>
+      </form>
+  
+      <!-- Contact Info Card -->
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p><strong>Email:</strong> vinitha.raghuraman&#64;gmail.com</p>
+        <p><strong>Phone:</strong> +91 9176562257</p>
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/vinitha-raghuraman-8503101b6/" target="_blank">vinitha-raghuraman</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  

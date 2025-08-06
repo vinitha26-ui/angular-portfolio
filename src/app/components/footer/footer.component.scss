@@ -1,0 +1,39 @@
+.footer {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+  
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+    }
+  
+    .left {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .right a {
+      color: #e0e0e0;
+      margin-left: 1rem;
+      transition: transform 0.2s;
+    }
+  
+    .right a:hover {
+      transform: scale(1.2);
+      color: #ffca28;
+    }
+  
+    .tagline {
+      font-size: 0.75rem;
+      color: #aaaaaa;
+    }
+  }
+  
